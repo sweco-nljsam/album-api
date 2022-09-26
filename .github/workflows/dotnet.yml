@@ -27,8 +27,8 @@ jobs:
 
     - name: Test unit tests
       run: dotnet test --no-build --verbosity normal
-      working-directory: Album.API.UnitTests/
+      working-directory: Album.Api.Tests
 
     - name: Test intergration tests
       run: dotnet test --no-build --verbosity normal
-      working-directory: Album.API.IntergrationTests/
+      working-directory: Album.Api.IntergrationTests/
