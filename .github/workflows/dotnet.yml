@@ -25,10 +25,5 @@ jobs:
     - name: Build/Publish the application
       run: dotnet publish --no-restore
 
-    - name: Test unit tests
+    - name: Test 
       run: dotnet test --no-build --verbosity normal
-      working-directory: Album.Api.Tests
-
-    - name: Test intergration tests
-      run: dotnet test --no-build --verbosity normal
-      working-directory: Album.Api.IntergrationTests/
